@@ -1,20 +1,20 @@
 %-----------------------------------------------------------------------
 %
 %   UFRJ  - Universidade Federal do Rio de Janeiro
-%   COPPE - Coordenação dos Programas de Pós-graduação em Engenharia
-%   PEE   - Programa de Engenharia Elétrica
+%   COPPE - Coordenaï¿½ï¿½o dos Programas de Pï¿½s-graduaï¿½ï¿½o em Engenharia
+%   PEE   - Programa de Engenharia Elï¿½trica
 %
 %
-%   Projeto ROSA - Robô para operação de stoplogs alagados
+%   Projeto ROSA - Robï¿½ para operaï¿½ï¿½o de stoplogs alagados
 %
-%   Minutas de reuniões
+%   Minutas de reuniï¿½es
 %
 %                                                        20/mar/14, Rio
 %                                                        Ramon R. Costa
 %----------------------------------------------------------------------
 \documentclass[12pt,a4paper]{article}
 \usepackage{amsmath,amssymb}  %pacotes do AMS
-\usepackage[latin1]{inputenc} %pacote para entender palavras acentuadas
+%\usepackage[utf8]{inputenc} %pacote para entender palavras acentuadas
 \usepackage{latexsym}         %pacote para incluir simbolos (ex.\Box)
 \usepackage{fancybox,fancyhdr}%pacote com frescuras
 \usepackage{graphicx}         %pacote para incluir figuras tipo eps
@@ -24,28 +24,28 @@
 \usepackage{psfrag}
 \usepackage{calc}
 \usepackage{multicol}
-\usepackage[english]{babel}
+\usepackage[english]{babel} 
 \usepackage[a4paper]{hyperref}
 %\usepackage[hypertex]{hyperref} %Make sure it comes last of your loaded packages
-\hypersetup{
-  verbose,
-  %dvips={true},
-  plainpages=false,
-  bookmarks=true,
-  colorlinks=true,
-  linkcolor=blue,
-  anchorcolor=red,
-  citecolor=green,
-  filecolor=magenta,
-  menucolor=red,
-  pagecolor=red,
-  urlcolor=blue
-}
+% \hypersetup{
+%   verbose,
+%   %dvips={true},
+%   plainpages=false,
+%   bookmarks=true,
+%   colorlinks=true,
+%   linkcolor=blue,
+%   anchorcolor=red,
+%   citecolor=green,
+%   filecolor=magenta,
+%   menucolor=red,
+%   pagecolor=red,
+%   urlcolor=blue
+%   }
 
 \input{commands}
 \input{a4size}
 
-\input{../macros/macros-ROSA}
+%\input{macros-ROSA}
 
 \begin{document}
 %---------------------------------------------------------------------
@@ -53,37 +53,37 @@
 \thispagestyle{fancy}%
 \renewcommand{\headrulewidth}  {0.4pt}%
 \renewcommand{\footrulewidth}  {0.4pt}%
-\lhead{\vspace*{-5mm}\includegraphics[width=30mm]{../logo/lead-logo.jpg}}%
-\chead{}%
-\rhead{}%
-\lfoot{}%
-\cfoot{}%
-\rfoot{}%
+% \lhead{\vspace*{-5mm}\includegraphics[width=30mm]{../logo/lead-logo.jpg}}%
+% \chead{}%
+% \rhead{}%
+% \lfoot{}%
+% \cfoot{}%
+% \rfoot{}%
 %---------------------------------------------------------------------
-~\vfill%
-
-{\grande Financiamento}
-
-\vspace{-15mm}%
-\hspace{50mm}%
-\includegraphics[width=50mm]{../logo/esbr-logo.png}
-\hspace{10mm}%
-\includegraphics[width=40mm]{../logo/aneel-logo.jpg}
-
-\vspace{35mm}%
-{\grande Execução}
-
-\vspace{-25mm}%
-\hspace{50mm}%
-\includegraphics[width=50mm]{../logo/gscar-logo.png}
-\hspace{10mm}%
-\includegraphics[width=40mm]{../logo/coppetec50-logo.jpg}
+% ~\vfill%
+% 
+% {\grande Financiamento}
+% 
+% \vspace{-15mm}%
+% \hspace{50mm}%
+% \includegraphics[width=50mm]{../logo/esbr-logo.png}
+% \hspace{10mm}%
+% \includegraphics[width=40mm]{../logo/aneel-logo.jpg}
+% 
+% \vspace{35mm}%
+% {\grande Execuï¿½ï¿½o}
+% 
+% \vspace{-25mm}%
+% \hspace{50mm}%
+% \includegraphics[width=50mm]{../logo/gscar-logo.png}
+% \hspace{10mm}%
+% \includegraphics[width=40mm]{../logo/coppetec50-logo.jpg}
 
 \vfill%
 \begin{center}
   {\GRANDE Projeto ROSA} \\[5mm]
-  {\Grande Robô para operação de stoplogs alagados} \\[25mm]
-  {\Grande Minutas de reuniões} \\
+  {\Grande Robo para operaÃ§Ã£o de stoplogs alagados} \\[25mm]
+  {\Grande Minutas de reuniï¿½es} \\
   \vfill%
   {\Large \today} \\[8mm]
 \end{center}
@@ -98,7 +98,7 @@
 \lhead{\vspace*{-5mm}\includegraphics[width=30mm]{../logo/lead-logo.jpg}}%
 \chead{Projeto ROSA}%
 \rhead{\sf\thepage}%
-\lfoot{Minutas de reuniões}%
+\lfoot{Minutas de reuniï¿½es}%
 \cfoot{}%
 \rfoot{\sf [\hours] \quad \today}%
 %---------------------------------------------------------------------
@@ -107,9 +107,9 @@
 
 \newpage%
 %---------------------------------------------------------------------
-\section{Identificação}
+\section{Identificaï¿½ï¿½o}
 
-\input{../identificacao/identificacao}
+\input{identificacao}
 
 \newpage%
 %---------------------------------------------------------------------
@@ -122,40 +122,40 @@
 %---------------------------------------------------------------------
 \section{Minutas}
 
-\subsection{Outubro/2013}
-  \input{minuta-de-reuniao(25-out-2013)}
+\subsection{Marco/2013}
+  \input{minuta-de-reuniao(26-mar-2015)}
 
-\newpage%
-\subsection{Novembro/2013}
-  \input{minuta-de-reuniao(01-nov-2013)}
-  \include{minuta-de-reuniao(06-nov-2013)}
-  \include{minuta-de-reuniao(11-nov-2013)}
-  \include{minuta-de-reuniao(18-nov-2013)}
-  \include{minuta-de-reuniao(25-nov-2013)}
+% \newpage%
+% \subsection{Novembro/2013}
+%   \input{minuta-de-reuniao(01-nov-2013)}
+%   \include{minuta-de-reuniao(06-nov-2013)}
+%   \include{minuta-de-reuniao(11-nov-2013)}
+%   \include{minuta-de-reuniao(18-nov-2013)}
+%   \include{minuta-de-reuniao(25-nov-2013)}
 
-\newpage%
-\subsection{Dezembro/2013}
-  \input{minuta-de-reuniao(02-dez-2013)}
-  \include{minuta-de-reuniao(09-dez-2013)}
-  \include{minuta-de-reuniao(16-dez-2013)}
-
-\newpage%
-\subsection{Janeiro/2014}
-  \input{minuta-de-reuniao(06-jan-2014)}
-  \include{minuta-de-reuniao(13-jan-2014)}
-  \include{minuta-de-reuniao(21-jan-2014)}
-  \include{minuta-de-reuniao(27-jan-2014)}
-
-\newpage%
-\subsection{Fevereiro/2014}
-  \input{minuta-de-reuniao(03-fev-2014)}
-  \include{minuta-de-reuniao(18-fev-2014)} %Confirmar a data
-  \include{minuta-de-reuniao(14-fev-2014)}
-  \include{minuta-de-reuniao(24-fev-2014)}
-
-\newpage%
-\subsection{Março/2014}
-  \input{minuta-de-reuniao(11-mar-2014)} %Conferir! 11 ou 12/mar ???  Revisar com Júlia...
+% \newpage%
+% \subsection{Dezembro/2013}
+%   \input{minuta-de-reuniao(02-dez-2013)}
+%   \include{minuta-de-reuniao(09-dez-2013)}
+%   \include{minuta-de-reuniao(17-dez-2013)}
+% 
+% \newpage%
+% \subsection{Janeiro/2014}
+%   \input{minuta-de-reuniao(06-jan-2014)}
+%   \include{minuta-de-reuniao(13-jan-2014)}
+%   \include{minuta-de-reuniao(21-jan-2014)}
+%   \include{minuta-de-reuniao(27-jan-2014)}
+% 
+% \newpage%
+% \subsection{Fevereiro/2014}
+%   \input{minuta-de-reuniao(03-fev-2014)}
+%   \include{minuta-de-reuniao(18-fev-2014)} %Confirmar a data
+%   \include{minuta-de-reuniao(14-fev-2014)}
+%   \include{minuta-de-reuniao(24-fev-2014)}
+% 
+% \newpage%
+% \subsection{Marco/2014}
+%   \input{minuta-de-reuniao(11-mar-2014)} %Conferir! 11 ou 12/mar ???  Revisar com Jï¿½lia...
 
 %---------------------------------------------------------------------
 
