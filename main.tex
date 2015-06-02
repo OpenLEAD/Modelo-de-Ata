@@ -14,7 +14,7 @@
 %----------------------------------------------------------------------
 \documentclass[12pt,a4paper]{article}
 \usepackage{amsmath,amssymb}  %pacotes do AMS
-%\usepackage[utf8]{inputenc} %pacote para entender palavras acentuadas
+\usepackage[utf8]{inputenc} %pacote para entender palavras acentuadas
 \usepackage{latexsym}         %pacote para incluir simbolos (ex.\Box)
 \usepackage{fancybox,fancyhdr}%pacote com frescuras
 \usepackage{graphicx}         %pacote para incluir figuras tipo eps
@@ -26,64 +26,24 @@
 \usepackage{multicol}
 \usepackage[english]{babel} 
 \usepackage[a4paper]{hyperref}
-%\usepackage[hypertex]{hyperref} %Make sure it comes last of your loaded packages
-% \hypersetup{
-%   verbose,
-%   %dvips={true},
-%   plainpages=false,
-%   bookmarks=true,
-%   colorlinks=true,
-%   linkcolor=blue,
-%   anchorcolor=red,
-%   citecolor=green,
-%   filecolor=magenta,
-%   menucolor=red,
-%   pagecolor=red,
-%   urlcolor=blue
-%   }
 
+ 
 \input{commands}
-\input{a4size}
-
-%\input{macros-ROSA}
-
+\input{a4size} 
+\input{macros-ROSA}
+  
 \begin{document}
 %---------------------------------------------------------------------
 \pagestyle{fancy}%
 \thispagestyle{fancy}%
 \renewcommand{\headrulewidth}  {0.4pt}%
 \renewcommand{\footrulewidth}  {0.4pt}%
-% \lhead{\vspace*{-5mm}\includegraphics[width=30mm]{../logo/lead-logo.jpg}}%
-% \chead{}%
-% \rhead{}%
-% \lfoot{}%
-% \cfoot{}%
-% \rfoot{}%
-%---------------------------------------------------------------------
-% ~\vfill%
-% 
-% {\grande Financiamento}
-% 
-% \vspace{-15mm}%
-% \hspace{50mm}%
-% \includegraphics[width=50mm]{../logo/esbr-logo.png}
-% \hspace{10mm}%
-% \includegraphics[width=40mm]{../logo/aneel-logo.jpg}
-% 
-% \vspace{35mm}%
-% {\grande Execu��o}
-% 
-% \vspace{-25mm}%
-% \hspace{50mm}%
-% \includegraphics[width=50mm]{../logo/gscar-logo.png}
-% \hspace{10mm}%
-% \includegraphics[width=40mm]{../logo/coppetec50-logo.jpg}
 
 \vfill%
 \begin{center}
-  {\GRANDE Projeto ROSA} \\[5mm]
-  {\Grande Robo para operação de stoplogs alagados} \\[25mm]
-  {\Grande Minutas de reuni�es} \\
+  {\GRANDE Projeto EMMA} \\[5mm]
+  {\Grande Robô para Inspeção de Turbinas In Situ.} \\[25mm]
+  {\Grande Minutas de Reuniões} \\
   \vfill%
   {\Large \today} \\[8mm]
 \end{center}
@@ -95,19 +55,19 @@
 \renewcommand{\headrulewidth}  {0.4pt}%
 \renewcommand{\footrulewidth}  {0.4pt}%
 %\lhead{\vspace*{-5mm}\includegraphics[bb=1 1 1023 392,width=30mm]{../logo/lead-logo.jpg}}%
-\lhead{\vspace*{-5mm}\includegraphics[width=30mm]{../logo/lead-logo.jpg}}%
-\chead{Projeto ROSA}%
+\lhead{\vspace*{-5mm}\includegraphics[width=30mm]{figs/logo/lead-logo.pdf}}%
+\chead{Projeto EMMA}%
 \rhead{\sf\thepage}%
-\lfoot{Minutas de reuni�es}%
+\lfoot{Minutas de Reuniões}%
 \cfoot{}%
 \rfoot{\sf [\hours] \quad \today}%
 %---------------------------------------------------------------------
-
+ 
 \tableofcontents
 
 \newpage%
 %---------------------------------------------------------------------
-\section{Identifica��o}
+\section{Identificação}
 
 \input{identificacao}
 
@@ -115,19 +75,26 @@
 %---------------------------------------------------------------------
 \section{Equipe}
 
-%\input{../equipe/equipe}
-(...)
+\input{equipe.tex}
 
 \newpage%
 %---------------------------------------------------------------------
 \section{Minutas}
-
-\subsection{Marco/2013}
+ 
+\subsection{Marco/2015}
   \input{minuta-de-reuniao(26-mar-2015)}
-
+ 
+\subsection{Abril/2015}
+  \input{minuta-de-reuniao(16-Abril-2015)}
+  
+\subsection{Maio/2015} 
+  \input{minuta-de-reuniao(07-Maio-2015)}
+  \include{minuta-de-reuniao(14-Maio-2015)}
+  \include{minuta-de-reuniao(21-Maio-2015)}
+  \include{minuta-de-reuniao(28-Maio-2015)} 
 % \newpage%
-% \subsection{Novembro/2013}
-%   \input{minuta-de-reuniao(01-nov-2013)}
+% \subsection{Abril/2015}
+%    \input{minuta-de-reuniao(16-nov-2013)}
 %   \include{minuta-de-reuniao(06-nov-2013)}
 %   \include{minuta-de-reuniao(11-nov-2013)}
 %   \include{minuta-de-reuniao(18-nov-2013)}
